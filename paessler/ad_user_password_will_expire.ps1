@@ -11,7 +11,7 @@ $diff.Days -le 7 -and $diff.Days -ge 0
 
 
 If ($PasswordWillExpirein7Days.count -eq $null -and $PasswordWillExpirein7Days -eq $null){
-    $cntLockedOutUsers=0
+    $cntPasswordWillExpirein7Days=0
 }Elseif ($PasswordWillExpirein7Days.count -eq $null -and $PasswordWillExpirein7Days -ne $null){
     $cntPasswordWillExpirein7Days=1
 }Else{
